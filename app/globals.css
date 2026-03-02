@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-stone-50 text-stone-900 antialiased;
+  }
+}
+
+@layer components {
+  .gradient-hero {
+    background: linear-gradient(135deg, #451a03 0%, #78350f 30%, #92400e 60%, #b45309 100%);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  .card-hover:hover {
+    @apply -translate-y-1 shadow-xl;
+  }
+}
